@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timer</title>
+        <script src="webui.js"></script>
+        <style>
+            body {
+                background-color: rgb(48, 48, 48);
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(0, 97, 171);
+            }
+            h1 {
+                color: white;
+            }
+            input {
+                background-color: rgb(48, 48, 48);
+                color: white;
+                border-color: rgb(0, 97, 171);
+                border-style: solid;
+                border-width: 3px;
+                border-radius: 5px;
+            }
+            button {
+                cursor: pointer;
+                background-color: rgb(48, 48, 48);
+                color: white;
+                background-color: rgb(0, 97, 171);
+                border-color: rgb(0, 97, 171);
+                border-style: solid;
+                border-width: 3px;
+                border-radius: 5px;
+            }
+            button:hover {
+                background-color: rgb(0, 59, 104);
+                border-color: rgb(0, 59, 104);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Timer</h1>
+        <p id="timeText" style="font-size: 3em;">0</p>
+        <input type="text" id="waitFor" width="200">
+        <button id="count">Count</button>
+        <script>
+            var button = document.getElementById('count');
+            button.addEventListener('click', function() {
+                webui.call('count', document.getElementById('waitFor').value);
+            });
+        </script>
+    </body>
+</html>
