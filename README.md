@@ -1,5 +1,7 @@
 # Simple-timer
 A (very) simple timer
+# Releases
+You can download this app on the [releases](http://github.com/hlelo101/Simple-timer/releases) page
 # Compile
 **Example**\
 To compile the code, you will need the [webUI](http://webui.me) library.
