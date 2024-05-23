@@ -20,5 +20,5 @@ Timer\
     
 Then, assuming that g++ is installed and that the terminal is opened in the timer directory, the following command would compile the program:
 ```batch
-g++ -o main main.cpp /home/[yourUsername]/Documents/Timer/lib/libwebui-2-static.a -static
+g++ -o main main.cpp /home/hlelo101/Documents/Timer/lib/libwebui-2-static.a -static
 ```
